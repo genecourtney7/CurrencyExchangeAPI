@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Currency Exchange</title>
+  <script type="module" src="index.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1></h1>
-    <p></p>
-    <pre>
-      
-    </pre>
-    <form>
-      <label for="keyWord">En:</label>
-      <input id="keyWord" type="text" name="keyWord">
-      <button type="submit" class="btn-success" id="keyWordSubmit">Get Results</button>
-    </form>
-    <p id="showResponse"></p>
+  <h1>Currency Converter</h1>
+	<label for="amount-input">Amount in USD:</label>
+	<input type="number" id="amount-input" value="1">
+	<br>
+	<label for="currency-select">Convert to:</label>
+	<select id="currency-select"></select>
+	<br>
+	<button id="convert-button">Convert</button>
+	<p id="result-text"></p>
 </body>
 </html>
